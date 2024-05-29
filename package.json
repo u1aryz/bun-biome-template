@@ -1,0 +1,24 @@
+{
+  "name": "bun-biome-template",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "^1.7.3",
+    "@types/bun": "latest",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "dev": "bun run src/index.ts",
+    "format": "biome check --apply src"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "bun run format"
+    ]
+  }
+}
