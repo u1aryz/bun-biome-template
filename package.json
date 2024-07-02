@@ -14,7 +14,7 @@
   "scripts": {
     "prepare": "husky",
     "dev": "bun run src/index.ts",
-    "format": "biome check --write src"
+    "format": "biome check --write"
   },
   "lint-staged": {
     "*.{js,ts}": [
