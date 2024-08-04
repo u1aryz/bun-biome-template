@@ -7,4 +7,4 @@ pre-commit:
 commit-msg:
   commands:
     "lint commit message":
-      run: npx --no -- commitlint --edit "$1"
+      run: bunx --no -- commitlint --edit "$1"
