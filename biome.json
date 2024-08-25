@@ -14,5 +14,10 @@
 	},
 	"files": {
 		"ignore": ["package.json"]
+	},
+	"vcs": {
+		"enabled": true,
+		"useIgnoreFile": true,
+		"clientKind": "git"
 	}
 }
