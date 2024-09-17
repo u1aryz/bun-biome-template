@@ -4,7 +4,7 @@
   "scripts": {
     "start": "bun run src/index.ts",
     "dev": "bun run --watch src/index.ts",
-    "format": "biome check --write"
+    "format": "biome check --write --unsafe"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.1",
