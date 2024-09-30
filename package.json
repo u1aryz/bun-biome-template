@@ -11,7 +11,7 @@
     "@commitlint/cli": "19.5.0",
     "@commitlint/config-conventional": "19.5.0",
     "@types/bun": "latest",
-    "lefthook": "1.7.17"
+    "lefthook": "1.7.18"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
