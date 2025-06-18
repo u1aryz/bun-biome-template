@@ -1,19 +1,19 @@
 {
-  "name": "bun-biome-template",
-  "type": "module",
-  "scripts": {
-    "start": "bun run src/index.ts",
-    "dev": "bun run --watch src/index.ts",
-    "format": "biome check --write --unsafe"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "@commitlint/cli": "19.8.1",
-    "@commitlint/config-conventional": "19.8.1",
-    "@types/bun": "latest",
-    "lefthook": "1.11.14"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  }
+	"name": "bun-biome-template",
+	"type": "module",
+	"scripts": {
+		"start": "bun run src/index.ts",
+		"dev": "bun run --watch src/index.ts",
+		"format": "biome check --write --unsafe"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.0.0",
+		"@commitlint/cli": "19.8.1",
+		"@commitlint/config-conventional": "19.8.1",
+		"@types/bun": "latest",
+		"lefthook": "1.11.14"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	}
 }
