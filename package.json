@@ -4,14 +4,16 @@
 	"scripts": {
 		"start": "bun run src/index.ts",
 		"dev": "bun run --watch src/index.ts",
-		"format": "biome check --write --unsafe"
+		"format": "biome check --write --unsafe",
+		"test": "vitest"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.0.4",
 		"@commitlint/cli": "19.8.1",
 		"@commitlint/config-conventional": "19.8.1",
 		"@types/bun": "latest",
-		"lefthook": "1.11.14"
+		"lefthook": "1.11.14",
+		"vitest": "^3.2.4"
 	},
 	"peerDependencies": {
 		"typescript": "^5.0.0"
