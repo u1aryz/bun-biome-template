@@ -9,7 +9,7 @@
         "@commitlint/config-conventional": "19.8.1",
         "@types/bun": "latest",
         "lefthook": "1.11.14",
-        "vitest": "^3.2.4",
+        "vitest": "3.2.4",
       },
       "peerDependencies": {
         "typescript": "^5.0.0",
