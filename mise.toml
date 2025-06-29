@@ -1,2 +1,22 @@
 [tools]
 bun = "1.2.17"
+
+[tasks.install]
+description = "Install dependencies"
+run = "bun install"
+
+[tasks.start]
+description = "Run the application"
+run = "bun start"
+
+[tasks.dev]
+description = "Run the application in development mode"
+run = "bun dev"
+
+[tasks.test]
+description = "Run tests"
+run = "bun test"
+
+[tasks.format]
+description = "Format code using Biome"
+run = "bun format"
