@@ -1,5 +1,5 @@
 [tools]
-bun = "1.2.17"
+bun = "1.2.18"
 
 [tasks.install]
 description = "Install dependencies"
