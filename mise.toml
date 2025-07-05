@@ -1,9 +1,8 @@
 [tools]
 bun = "1.2.18"
 
-[tasks.install]
-description = "Install dependencies"
-run = "bun install"
+[hooks]
+postinstall = "bun i"
 
 [tasks.start]
 description = "Run the application"
