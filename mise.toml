@@ -6,16 +6,17 @@ postinstall = "bun i"
 
 [tasks.start]
 description = "Run the application"
-run = "bun start"
+run = "bun run start"
 
 [tasks.dev]
 description = "Run the application in development mode"
-run = "bun dev"
+run = "bun run dev"
 
 [tasks.test]
 description = "Run tests"
-run = "bun test"
+run = "bun run test"
 
 [tasks.format]
-description = "Format code using Biome"
-run = "bun format"
+description = "Format code with typecheck"
+run = ["bun run format", "bun run typecheck"]
+alias = "lint"
