@@ -1,7 +1,7 @@
 pre-commit:
   commands:
     check:
-      run: bunx biome check --write --no-errors-on-unmatched --files-ignore-unknown=true {staged_files} && bunx tsc --noEmit
+      run: bunx biome check --write --error-on-warnings --no-errors-on-unmatched --files-ignore-unknown=true {staged_files} && bunx tsc --noEmit
       stage_fixed: true
 
 commit-msg:
