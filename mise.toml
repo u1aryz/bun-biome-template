@@ -1,5 +1,5 @@
 [tools]
-bun = "1.2.21"
+bun = "1.2.22"
 
 [hooks]
 postinstall = "bun i"
