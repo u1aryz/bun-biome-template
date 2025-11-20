@@ -15,7 +15,7 @@
 		"@commitlint/config-conventional": "20.0.0",
 		"@types/bun": "latest",
 		"lefthook": "2.0.4",
-		"vitest": "4.0.10"
+		"vitest": "4.0.12"
 	},
 	"peerDependencies": {
 		"typescript": "^5.0.0"
