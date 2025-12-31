@@ -3,6 +3,7 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
+		"prepare": "lefthook install",
 		"start": "bun run src/index.ts",
 		"dev": "bun run --watch src/index.ts",
 		"format": "biome check --write --unsafe",
