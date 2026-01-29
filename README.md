@@ -1,11 +1,11 @@
-# bun-biome-template
+# bun-starter-template
 
-Bun + Biome starter template.
+Bun starter template.
 
 ## Getting started
 
 ```bash
-bunx degit u1aryz/bun-biome-template my-app
+bunx degit u1aryz/bun-starter-template my-app
 cd my-app
 bun install
 ```
