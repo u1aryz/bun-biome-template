@@ -8,7 +8,7 @@
 		"dev": "bun run --watch src/index.ts",
 		"format": "oxfmt . && oxlint --fix .",
 		"typecheck": "tsc --noEmit",
-		"test": "vitest"
+		"test": "vitest run"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "20.3.1",
