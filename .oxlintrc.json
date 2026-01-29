@@ -1,0 +1,16 @@
+{
+	"$schema": "./node_modules/oxlint/configuration_schema.json",
+	"categories": {
+		"correctness": "error",
+		"suspicious": "warn",
+		"style": "warn"
+	},
+	"plugins": ["typescript", "import"],
+	"rules": {
+		"eslint/no-unused-vars": "error",
+		"eslint/no-magic-numbers": "off",
+		"eslint/id-length": "off",
+		"import/no-named-export": "off",
+		"import/prefer-default-export": "off"
+	}
+}
