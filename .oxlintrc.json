@@ -2,14 +2,15 @@
 	"$schema": "./node_modules/oxlint/configuration_schema.json",
 	"categories": {
 		"correctness": "error",
-		"suspicious": "warn",
+		"suspicious": "error",
+		"pedantic": "warn",
+		"perf": "warn",
 		"style": "warn"
 	},
-	"plugins": ["typescript", "import"],
+	"plugins": ["unicorn", "oxc", "typescript", "import", "promise"],
 	"rules": {
-		"eslint/no-unused-vars": "error",
-		"eslint/no-magic-numbers": "off",
-		"eslint/id-length": "off",
+		"no-magic-numbers": "off",
+		"id-length": "off",
 		"import/no-named-export": "off",
 		"import/prefer-default-export": "off"
 	}
