@@ -5,17 +5,16 @@
 	"scripts": {
 		"start": "bun run src/index.ts",
 		"dev": "bun run --watch src/index.ts",
-		"format": "oxfmt . && oxlint --fix .",
+		"format": "biome check --write --unsafe",
 		"typecheck": "tsc --noEmit",
 		"test": "bun test"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "2.3.12",
 		"@commitlint/cli": "20.3.1",
 		"@commitlint/config-conventional": "20.3.1",
 		"@types/bun": "latest",
-		"lefthook": "2.0.15",
-		"oxfmt": "^0.27.0",
-		"oxlint": "^1.42.0"
+		"lefthook": "2.0.15"
 	},
 	"peerDependencies": {
 		"typescript": "^5.0.0"

@@ -1,10 +1,8 @@
 pre-commit:
   commands:
-    format:
-      run: bunx oxfmt {staged_files} && bunx oxlint --fix {staged_files}
+    check:
+      run: bunx biome check --write --error-on-warnings --no-errors-on-unmatched --files-ignore-unknown=true {staged_files} && bunx tsc --noEmit
       stage_fixed: true
-    typecheck:
-      run: bunx tsc --noEmit
 
 commit-msg:
   commands:
