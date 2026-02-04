@@ -17,7 +17,33 @@
 		"rules": {
 			"recommended": true,
 			"correctness": {
-				"noUnusedImports": "error"
+				"noUnusedImports": "error",
+				"noUnusedVariables": "error",
+				"noUnusedFunctionParameters": "error"
+			},
+			"complexity": {
+				"noExcessiveCognitiveComplexity": "error",
+				"noUselessTypeConstraint": "error",
+				"useLiteralKeys": "error",
+				"useSimplifiedLogicExpression": "error"
+			},
+			"style": {
+				"noNegationElse": "error",
+				"useBlockStatements": "error",
+				"useCollapsedElseIf": "error",
+				"useForOf": "error",
+				"useConsistentArrayType": {
+					"level": "error",
+					"options": { "syntax": "shorthand" }
+				},
+				"useShorthandAssign": "error"
+			},
+			"suspicious": {
+				"noEmptyBlockStatements": "error"
+			},
+			"performance": {
+				"noBarrelFile": "error",
+				"noReExportAll": "error"
 			}
 		}
 	},

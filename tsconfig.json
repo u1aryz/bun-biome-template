@@ -12,6 +12,7 @@
 		"moduleResolution": "bundler",
 		"allowImportingTsExtensions": true,
 		"verbatimModuleSyntax": true,
+		"isolatedModules": true,
 		"noEmit": true,
 
 		// Best practices
@@ -19,9 +20,9 @@
 		"skipLibCheck": true,
 		"noFallthroughCasesInSwitch": true,
 
-		// Some stricter flags (disabled by default)
-		"noUnusedLocals": false,
-		"noUnusedParameters": false,
-		"noPropertyAccessFromIndexSignature": false
+		// Stricter flags (handled by Biome: noUnusedLocals, noUnusedParameters)
+		"noPropertyAccessFromIndexSignature": true,
+		"exactOptionalPropertyTypes": true,
+		"noUncheckedIndexedAccess": true
 	}
 }

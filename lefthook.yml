@@ -1,10 +1,14 @@
 pre-commit:
+  parallel: true
   commands:
-    check:
-      run: bunx biome check --write --error-on-warnings --no-errors-on-unmatched --files-ignore-unknown=true {staged_files} && bunx tsc --noEmit
+    biome:
+      glob: "*.{js,ts,jsx,tsx,json,jsonc}"
+      run: bunx biome check --write --error-on-warnings --no-errors-on-unmatched --files-ignore-unknown=true {staged_files}
       stage_fixed: true
+    typecheck:
+      run: bunx tsc --noEmit
 
 commit-msg:
   commands:
-    "lint commit message":
+    commitlint:
       run: bunx --no -- commitlint --edit "$1"
